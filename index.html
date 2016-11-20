@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Slot Machine</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game">
+        <div class="container" id="container">
+            <div class="row">
+                <h1>SLOT MACHINE</h1>
+            </div>
+            <div class="row">
+                <div id="slot-machine" class="col-xs-12 col-md-offset-4 col-md-4">
+                    <canvas id="canvas" width="423" height="300"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div id="fields" class="col-xs-12 col-md-offset-2 col-md-8">
+                    <label for="pay-table" class="col-xs-12">Your Prize:
+                        <input type="text" class="form-control" id="pay-table" value="0" disabled="disabled">
+                    </label>
+                    <label for="balance" class="col-xs-12">Current Balance:
+                        <input class="form-control" type="text" id="balance" value="5">
+                    </label>
+                    <button class="form-control btn btn-primary" type="button" id="play"> SPIN </button>
+                    <button class="form-control btn btn-primary" type="button" id="checkout">Check out</button>
+                    <h1>Game Mode:</h1>
+                    <select id="game-mode">
+                        <option value="random">Random</option>
+                        <option value="fixed">Fixed</option>
+                    </select>
+                    <div id="fixed-mode-options" class="hidden">
+                        <select id="item-selector">
+                            <option value="4">Cherry</option>
+                            <option value="3">7</option>
+                            <option value="0">3xBar</option>
+                            <option value="2">2xBar</option>
+                            <option value="1">Bar</option>
+                        </select>
+                        <select id="row-selector">
+                            <option value="top">Top</option>
+                            <option value="middle">Middle</option>
+                            <option value="bottom">Bottom</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/constants.js"></script>
+    <script src="js/reel.js"></script>
+    <script src="js/slotmachine.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

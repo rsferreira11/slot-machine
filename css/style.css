@@ -1,0 +1,180 @@
+// Reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-family:Lucida Grande,trebuchet ms,verdana,arial,helvetica,sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+// Game
+
+html , body
+{
+    height:100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'Slackey';
+}
+
+#game{
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display:block;
+    background-color:#cdcdcd;
+    background-image:-moz-linear-gradient(#bbb,#eee,#bbb);
+    background-image:-webkit-linear-gradient(#bbb,#eee,#bbb);
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+
+#container
+{
+    position:absolute;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    margin-left: -230px;
+    margin-top: -460px;
+    text-align: center;
+}
+
+#container input, button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 450px;
+	text-align: center;
+}
+
+#container h1 {
+	font-family: 'Slackey';
+	color: white;
+	text-shadow: #000 0px 0px 5px;
+	font-size: 30px;
+}
+
+#container button, input, select{
+    font-family: 'Slackey';
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius:10px;
+    background-size:auto 62px;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.15);
+    background-position: 0px -1px;
+    text-shadow:#000 0px 0px 4px;
+    background-image:-moz-linear-gradient(#77e0fb,#3f93ac);
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#77e0fb), to(#3f93ac));
+}
+
+#container select option {
+	color: #000;
+}
+
+#container button:hover, select:hover{
+    background-image:-moz-linear-gradient(#ffd539,#af861e);
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#ffd539), to(#af861e));
+}
+
+#container button:disabled, select:disabled{
+    background-image:-moz-linear-gradient(#bbb,#ccc);
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#bbb), to(#ccc));
+}
+
+#container label, select {
+	font-family: 'Slackey';
+	line-height: 40px;
+	font-size: 36px;
+	text-align-last: center;
+}
+
+#container input{
+    background-image:-moz-linear-gradient(#eee,#fff);
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+}
+
+#container #buttons #play
+{
+    font-family: 'Slackey';
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius:10px;
+    background-size:auto 62px;
+}
+
+body .win {
+    background-image:-moz-linear-gradient(#0b0,#333) !important;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(#0b0), to(#333)) !important;
+}
+
+#container #slot-machine
+{
+    display:block;
+    position:relative;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    background:#000;
+    border: 10px solid;
+    border-color: #777 #999 #666 #999;
+    border-radius:3px;
+    -moz-box-shadow:#fff 0px 1px 0px;
+}
+
+#container #slot-machine canvas
+{
+    width: 410px;
+    height: 296px;
+    position: relative;
+    background: white;
+    border: 2px solid gold;
+}
+
+.hidden {
+	display: none;
+}
