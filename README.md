@@ -1,4 +1,4 @@
-# Slot Machine Derivco
+# Slot Machine
 
 ## Description
 
